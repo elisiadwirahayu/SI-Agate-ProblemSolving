@@ -10,8 +10,7 @@ public class LingkaranMovement : MonoBehaviour
     float vertical;
 
     public float maxMoveSpeed = 10f;
-
-
+    
     // Start is called before the first frame update
     void Start()
     {
