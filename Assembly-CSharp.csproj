@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\LingkaranControl.cs" />
+    <Compile Include="Assets\Scripts\LingkaranMovement.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/Game DILo/Problem Solving/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

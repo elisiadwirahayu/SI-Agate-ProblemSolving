@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Problem Tiga.unity
+- path: Assets/Scenes/Problem Empat.unity
   isLoaded: 1
   isActive: 1
