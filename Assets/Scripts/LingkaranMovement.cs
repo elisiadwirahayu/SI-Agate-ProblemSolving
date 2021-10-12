@@ -4,29 +4,43 @@ using UnityEngine;
 
 public class LingkaranMovement : MonoBehaviour
 {
-    Rigidbody2D rb;
+    Rigidbody2D rigidbody;
 
     float horizontal;
     float vertical;
 
+    Vector2 currentVelocity;
+    public ScoreCount score;
     public float maxMoveSpeed = 10f;
-    
-    // Start is called before the first frame update
+    public float smoothTime = 0.3f;
+
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         // gerakan player menggunakan WASD ataupun arrowkey
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+
+        // gerakan bola mengikuti mouse, menggunakan smoothdamp sehingga gerakan lebih halus
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = Vector2.SmoothDamp(transform.position, mousePosition, ref currentVelocity, smoothTime, maxMoveSpeed);
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * maxMoveSpeed, vertical * maxMoveSpeed);
+        rigidbody.velocity = new Vector2(horizontal * maxMoveSpeed, vertical * maxMoveSpeed);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "kotak")
+        {
+            score.IncrementScore();
+            Destroy(collision.gameObject);
+        }
     }
 }

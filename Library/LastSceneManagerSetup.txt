@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Problem Enam.unity
+- path: Assets/Scenes/Problem Tujuh.unity
   isLoaded: 1
   isActive: 1

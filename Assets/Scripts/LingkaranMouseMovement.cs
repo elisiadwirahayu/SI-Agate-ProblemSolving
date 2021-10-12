@@ -12,6 +12,8 @@ public class LingkaranMouseMovement : MonoBehaviour
     //Agar gerakan bola lebih smooth
     public float smoothTime = 0.4f;
 
+    public ScoreCount score;
+
     Vector2 currentVelocity;
 
     // Start is called before the first frame update
@@ -27,5 +29,14 @@ public class LingkaranMouseMovement : MonoBehaviour
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = Vector2.SmoothDamp(transform.position, mousePosition, ref currentVelocity, smoothTime, maxMoveSpeed);
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "kotak")
+        {
+            score.IncrementScore();
+            Destroy(collision.gameObject);
+        }
     }
 }
