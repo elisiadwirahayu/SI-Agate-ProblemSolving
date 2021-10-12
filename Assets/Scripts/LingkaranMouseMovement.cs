@@ -35,6 +35,7 @@ public class LingkaranMouseMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "kotak")
         {
+            transform.localScale += new Vector3(0.05f, 0.05f, 0.05f);
             score.IncrementScore();
             Destroy(collision.gameObject);
         }
