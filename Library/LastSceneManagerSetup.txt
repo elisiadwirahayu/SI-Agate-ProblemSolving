@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Problem Tujuh.unity
+- path: Assets/Scenes/Problem Delapan.unity
   isLoaded: 1
   isActive: 1
