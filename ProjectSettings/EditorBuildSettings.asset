@@ -5,7 +5,37 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Problem Sepuluh.unity
+    guid: 641177a7518f2b540a427ec26e5bafa9
+  - enabled: 1
+    path: Assets/Scenes/Problem Satu.unity
+    guid: 81dfe5a3fba3d7f408ffe189f467acc1
+  - enabled: 1
+    path: Assets/Scenes/Problem Dua.unity
+    guid: b760a95f853508f439327e8b1a145520
+  - enabled: 1
+    path: Assets/Scenes/Problem Tiga.unity
+    guid: 2b904acde0f7e194ebf061451e94154d
+  - enabled: 1
+    path: Assets/Scenes/Problem Empat.unity
+    guid: 175b75a06dd4b92499ba22adaedfdef7
+  - enabled: 1
+    path: Assets/Scenes/Problem Lima.unity
+    guid: 5db218b5230934344b753d8361200e4b
+  - enabled: 1
+    path: Assets/Scenes/Problem Enam.unity
+    guid: 420b449a068641944a31e5e9b66aac77
+  - enabled: 1
+    path: Assets/Scenes/Problem Tujuh.unity
+    guid: 3a789509a1f8e264e87241aa16e28c6a
+  - enabled: 1
+    path: Assets/Scenes/Problem Delapan.unity
+    guid: 4d181f866b5337241bacaf12da49637b
+  - enabled: 1
+    path: Assets/Scenes/Problem Sembilan.unity
+    guid: cce8fe2ce59067548b3f8402e6e1b3c8
   m_configObjects: {}

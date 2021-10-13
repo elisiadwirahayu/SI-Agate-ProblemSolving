@@ -64,6 +64,8 @@
     <Compile Include="Assets\Scripts\LingkaranControl.cs" />
     <Compile Include="Assets\Scripts\LingkaranMouseMovement.cs" />
     <Compile Include="Assets\Scripts\LingkaranMovement.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\MenuManager.cs" />
     <Compile Include="Assets\Scripts\ScoreCount.cs" />
     <Compile Include="Assets\Scripts\UIScore.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
